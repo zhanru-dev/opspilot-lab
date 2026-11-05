@@ -11,6 +11,22 @@ It brings event preparation into one place and answers the question operations t
 - **Run**: live streaming with chat, questions and polls, plus a live room for the operations team.
 - **Record**: every important decision is audited, and other systems are notified through signed webhooks.
 
+## Getting started
+
+Requirements: Node.js 22 and npm 10.
+
+```bash
+npm ci
+cp .env.example .env
+npm run dev:api
+```
+
+The API listens on http://127.0.0.1:4200. Check it with:
+
+```bash
+curl http://127.0.0.1:4200/api/v1/health/live
+```
+
 ## Status
 
 Early development. See the [product brief](docs/product-brief.md) for the problem, users and scope.
