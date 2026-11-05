@@ -1,0 +1,26 @@
+# Dependencies: created by npm install, large, reproducible
+node_modules/
+
+# Build output: generated from source
+dist/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Test output
+playwright-report/
+test-results/
+
+# Environment variables: contain passwords and keys, never commit
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+*.log
